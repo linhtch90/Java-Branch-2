@@ -36,6 +36,11 @@ public class MainFrame extends javax.swing.JFrame {
         lblCount.setText("0");
 
         btnIncrease.setText("Toan Increase (+)");
+        btnIncrease.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIncreaseActionPerformed(evt);
+            }
+        });
 
         btnDecrease.setText("Huu Decrease (-)");
 
@@ -66,6 +71,15 @@ public class MainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void btnIncreaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncreaseActionPerformed
+        // TODO add your handling code here:
+        int a=0;
+        
+        a=Integer.parseInt(lblCount.getText());
+        a++;
+        lblCount.setText(String.valueOf(a));
+    }//GEN-LAST:event_btnIncreaseActionPerformed
 
     /**
      * @param args the command line arguments

@@ -60,6 +60,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Toan Increase (+)"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIncreaseActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDecrease">
       <Properties>
