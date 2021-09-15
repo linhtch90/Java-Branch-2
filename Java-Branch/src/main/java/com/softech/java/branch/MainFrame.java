@@ -43,6 +43,11 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         btnDecrease.setText("Huu Decrease (-)");
+        btnDecrease.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDecreaseActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,6 +85,13 @@ public class MainFrame extends javax.swing.JFrame {
         a++;
         lblCount.setText(String.valueOf(a));
     }//GEN-LAST:event_btnIncreaseActionPerformed
+
+    private void btnDecreaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecreaseActionPerformed
+        // TODO add your handling code here:
+        int b = Integer.parseInt(lblCount.getText());
+        b--;
+        lblCount.setText(String.valueOf(b));
+    }//GEN-LAST:event_btnDecreaseActionPerformed
 
     /**
      * @param args the command line arguments
